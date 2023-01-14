@@ -1,2 +1,2 @@
-# home
+# Home
 Personal Web Page
