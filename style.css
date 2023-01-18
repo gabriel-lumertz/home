@@ -1,43 +1,108 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    font-size: 48px;
-    /* overflow: hidden; */
-    background-color: #F3F2EF;
-    color: #000000;
-}
-
-nav {
-    display: flex;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10%;
-    background-color: #0A66C2;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-a {
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #0077b5;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
     text-decoration: none;
-    background-color: #0A66C2;
-    color: #F3F2EF;
-}
-
-section {
-    display: flex;
-    margin: 100px auto;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
-    border: solid 1px;
-}
-
-img {
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
-}
+  }
+  
+  /* Conteúdo principal */
+  main {
+    padding: 20px;
+  }
+  
+  main section {
+    margin-bottom: 20px;
+  }
+  
+  main h2 {
+    margin-top: 0;
+  }
+  
+  /* Estilos de seção */
+  #sobre {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #habilidades {
+    background-color: #0077b5;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #habilidades ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #habilidades ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #experiencia {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #projetos {
+    background-color: #0077b5;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #projetos ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #projetos ul li {
+    margin-bottom: 10px;
+  }
+  
+  #contato {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
