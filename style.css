@@ -1,108 +1,57 @@
-/* Configurações gerais */
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root {
+  --cor-1: #D9D9D9;
+  --cor-2: #593232;
+  --cor-3: #BF7463;
+  --cor-4: #F2AA6B;
+  --cor-5: #F2DDB6;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  background: var(--cor-1);
+  display: flex;
+}
+
+
+header {
+  /* background: var(--cor-2); */
+  color: var(--cor-2);
+  font-size: 2rem;
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  border: 4rem;
+}
+
+@media (max-width: 768px) {
+  body, header, section {
+    flex-direction: column;
   }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #0077b5;
-    color: white;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  header nav {
-    float: right;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Conteúdo principal */
-  main {
-    padding: 20px;
-  }
-  
-  main section {
-    margin-bottom: 20px;
-  }
-  
-  main h2 {
-    margin-top: 0;
-  }
-  
-  /* Estilos de seção */
-  #sobre {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #habilidades {
-    background-color: #0077b5;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #habilidades ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #habilidades ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  #experiencia {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #projetos {
-    background-color: #0077b5;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #projetos ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #projetos ul li {
-    margin-bottom: 10px;
-  }
-  
-  #contato {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
+}
+
+header div {
+  height: 20rem;
+  align-items: center;
+  padding: 4rem;
+  border: 4rem;  
+}
+
+header div img {
+  height: 20rem;
+  border-radius: 50%;
+}
+
+section {
+  color: var(--cor-2);
+  font-size: 2rem;
+}
