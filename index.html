@@ -1,53 +1,140 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./custom.js"></script>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <title>Gabriel Lumertz</title>
 </head>
-<body class="bg-cor1 font-serif">
-  <header class="flex flex-col md:flex-row items-center p-4">
-    <div class="p-4">
-      <img class="rounded-full flex-1 max-w-64 max-h-64" src="https://avatars.githubusercontent.com/u/61668558?v=4" alt="">
+
+<div class="container bg-gray-900 h-screen w-screen mx-auto flex items-center justify-center text-gray-300">
+
+  <div class="flex flex-col bg-gray-700 shadow-lg shadow-gray-800 py-4 px-6 mx-4 rounded-md">
+
+    <div class="flex flex-row items-center">
+
+        <img
+          class="w-24 rounded-full"
+          src="https://avatars.githubusercontent.com/u/61668558?v=4"
+          alt="User Avatar"
+        />
+
+        <div class="ml-4">
+          <h3 class="font-semibold text-2xl">Gabriel Lumertz</h3>
+          <h4 class="text-indigo-300 pt-1">Software Developer</h4>
+        </div>
+
+        <div class="flex flex-row mx-4 p-4">
+          <a class="p-2 mt-8" href="https://www.linkedin.com/in/gabriel-lumertz/" target="_blank">
+            <img class="w-6" src="./assets/logo-linkedin.png" alt="Logo LinkedIn">
+          </a>
+          <a class="p-2 mt-8" href="https://github.com/gabriel-lumertz" target="_blank">
+            <img class="w-6" src="./assets/logo-github.png" alt="Logo GitHub">
+          </a>
+          <a class="p-2 mt-8" href="mailto:gabriel@lumertz.dev">
+            <img class="w-6" src="./assets/logo-gmail.png" alt="Logo Gmail">
+          </a>
+          <a class="p-2 mt-8" href="https://wa.me/5199868614" target="_blank">
+            <img class="w-6" src="./assets/logo-whatsapp.png" alt="Logo Gmail">
+          </a>
+        </div>
+    
     </div>
-    <div class="p-4 flex-1">
-      <p class="text-cor2 text-justify text-4xl">Olá meu nome é <b><i>Gabriel Lumertz</i></b>, sou estudante de Ciências da Computação e desenvolvedor front-end iniciante. Estou focado em aprender HTML, CSS, JavaScript e outras tecnologias Web. Sou curioso, comunicativo e valorizo o trabalho em equipe.</p>
+
+    <div class="mt-6">
+      <h2 class="font-semibold text-indigo-300 text-2xl mb-2">Bio</h2>
+      <p class="indent-4 font-light mt-1 max-w-lg text-justify">
+        Sou formado em Administração de Empresas e estudante de Ciências da Computação. Estou focado em aprender HTML, CSS, JavaScript e outras tecnologias Web. Sou curioso, comunicativo e valorizo o trabalho em equipe.
+      </p>
+
     </div>
-  </header>
-  <div class="p-4 text-cor2 text-2xl">Contato
-    <ul class="p-4">
-      <li class="p-4">
-        <b>Email: </b><a href="mailto:gabriel@lumertz.dev">gabriel@lumertz.dev</a>
-      </li class="p-4">
-      <li class="p-4">
-        <b>WhatsApp: </b><a href="https://wa.me/5198608614" target="_blank">(51) 9 9860-8614</a>
-      </li class="p-4">
-      <li class="p-4">
-        <b>GitHub: </b><a href="https://github.com/gabriel-lumertz" target="_blank">gabriel-lumertz</a>
-      </li>
-      <li class="p-4">
-        <b>LinkedIn: </b><a href="https://www.linkedin.com/in/gabriel-lumertz/" target="_blank">gabriel-lumertz</a>
-      </li>
-    </ul>
+
+    <div class="mt-6">
+      
+      <h2 class="text-indigo-300 font-semibold text-2xl mb-2">Carreira</h2>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Sanremo</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de BI</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Gauchafarma</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de Sistemas</li>
+        <li class="list-item">Analista de Compras</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Procfit</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de Sistemas</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Mais Econômica</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de Supply Chain</li>
+        <li class="list-item">Analista de Logística</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">RMA</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de Logística</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Stemac</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Analista de Logística</li>
+        <li class="list-item">Assistente de Logística</li>
+      </ul>
+
+      <div class="mt-4">
+        
+        <h3 class="text-yellow-400 font-medium text-xl mt-1">Panpharma</h3>
+
+      </div>
+
+      <ul class="list-disc list-inside pl-4">
+        <li class="list-item">Assistente de Logística</li>
+      </ul>
+    
+    </div>
+
   </div>
-  <section class="p-4 text-cor2 text-2xl">Skills
-    <ul class="p-4">
-      <li class="p-4">HTML</li>
-      <li class="p-4">CSS</li>
-      <li class="p-4">JavaScript</li>
-      <li class="p-4">SQL</li>
-    </ul>
-  </section>
-  <section class="p-4 text-cor2 text-2xl">Projetos
-    <ul class="p-4">
-      <li>
-        <a class="p-4" href="https://gabriel-lumertz.github.io/resultado-loteria/" target="_blank">Resultado Loterias</a>
-      </li>
-    </ul>
-  </section>
-</body>
+     
+</div>
+
 </html>

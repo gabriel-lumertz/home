@@ -1,3 +1,5 @@
+/*
+
 * {
   margin: 0;
 	padding: 0;
@@ -22,7 +24,6 @@ body {
 
 
 header {
-  /* background: var(--cor-2); */
   color: var(--cor-2);
   font-size: 2rem;
   height: 32rem;
@@ -54,4 +55,10 @@ header div img {
 section {
   color: var(--cor-2);
   font-size: 2rem;
+}
+
+*/
+
+body {
+  background-color: rgb(17 24 39);
 }
