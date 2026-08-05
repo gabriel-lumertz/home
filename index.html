@@ -1,158 +1,268 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Lumertz — Data Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./custom.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Gabriel Lumertz</title>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  </style>
 </head>
 
-<body class="container bg-gray-900 my-6 mx-auto flex items-center justify-center text-gray-300">
+<body class="min-h-screen bg-onyx-50 text-onyx-900 antialiased">
 
-  <div class="flex flex-col bg-gray-700 shadow-lg shadow-gray-800 py-4 px-6 mx-4 rounded-md">
+  <!-- Navegação -->
+  <nav class="sticky top-0 z-10 border-b border-onyx-100 bg-onyx-50/80 backdrop-blur">
+    <div class="mx-auto flex w-full max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-1 px-4 py-3 text-sm font-medium text-onyx-700 sm:px-6">
+      <a href="#bio" class="transition-colors hover:text-onyx-900">Bio</a>
+      <a href="#habilidades" class="transition-colors hover:text-onyx-900">Habilidades</a>
+      <a href="#formacao" class="transition-colors hover:text-onyx-900">Formação</a>
+      <a href="#carreira" class="transition-colors hover:text-onyx-900">Carreira</a>
+      <a href="#contato" class="transition-colors hover:text-onyx-900">Contato</a>
+    </div>
+  </nav>
 
-    <div class="flex flex-row items-center">
+  <main class="mx-auto w-full max-w-3xl px-4 py-10 sm:px-6 sm:py-16">
+
+    <!-- Cabeçalho -->
+    <header class="rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
 
         <img
-          class="w-24 rounded-full"
+          class="h-24 w-24 rounded-full object-cover ring-4 ring-onyx-100"
           src="https://avatars.githubusercontent.com/u/61668558?v=4"
-          alt="User Avatar"
+          alt="Foto de Gabriel Lumertz"
         />
 
-        <div class="ml-4">
-          <h3 class="font-semibold text-2xl">Gabriel Lumertz</h3>
-          <h4 class="text-indigo-300 pt-1">Data Engineer</h4>
+        <div class="flex-1 text-center sm:text-left">
+          <h1 class="text-2xl font-bold text-onyx-900 sm:text-3xl">Gabriel Lumertz</h1>
+          <p class="mt-1 font-medium text-deep-walnut-600">Data Engineer</p>
         </div>
 
-        <div class="flex flex-row sm:flex flex-wrap mx-4 p-4">
-          <a class="p-2 sm:mt-8" href="https://www.linkedin.com/in/gabriel-lumertz/" target="_blank">
-            <img class="w-6" src="./assets/logo-linkedin.png" alt="Logo LinkedIn">
+        <nav class="flex items-center gap-4" aria-label="Redes sociais">
+          <a class="transition-opacity hover:opacity-60" href="https://www.linkedin.com/in/gabriel-lumertz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img class="h-6 w-6" src="./assets/logo-linkedin.png" alt="Logo LinkedIn">
           </a>
-          <a class="p-2 sm:mt-8" href="https://github.com/gabriel-lumertz" target="_blank">
-            <img class="w-6" src="./assets/logo-github.png" alt="Logo GitHub">
+          <a class="transition-opacity hover:opacity-60" href="https://github.com/gabriel-lumertz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img class="h-6 w-6" src="./assets/logo-github.png" alt="Logo GitHub">
           </a>
-          <a class="p-2 sm:mt-8" href="mailto:gabriel@lumertz.dev">
-            <img class="w-6" src="./assets/logo-gmail.png" alt="Logo Gmail">
+          <a class="transition-opacity hover:opacity-60" href="mailto:gabriel@lumertz.dev" aria-label="E-mail">
+            <img class="h-6 w-6" src="./assets/logo-gmail.png" alt="Logo Gmail">
           </a>
-          <a class="p-2 sm:mt-8" href="https://wa.me/5199868614" target="_blank">
-            <img class="w-6" src="./assets/logo-whatsapp.png" alt="Logo Gmail">
+          <a class="transition-opacity hover:opacity-60" href="https://wa.me/5199868614" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <img class="h-6 w-6" src="./assets/logo-whatsapp.png" alt="Logo WhatsApp">
           </a>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Bio -->
+    <section id="bio" class="reveal mt-8 scroll-mt-20 rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-4 text-xl font-semibold text-deep-walnut-800 sm:text-2xl">Bio</h2>
+
+      <div class="space-y-4 text-sm leading-relaxed sm:text-base">
+        <p>
+          Sou um profissional de dados com experiência consolidada em Business Intelligence (BI) e em aprofundamento
+          contínuo em Engenharia de Dados. Minha principal expertise é transformar dados brutos em ativos estratégicos,
+          focando na construção de pipelines e soluções que otimizam a tomada de decisão estratégica.
+        </p>
+
+        <p>
+          Sou proficiente nas linguagens SQL (para análise, otimização de consultas e desenvolvimento de relatórios)
+          e Python. Minha atuação abrange a gestão completa do ciclo de dados:
+        </p>
+
+        <ul class="list-disc space-y-1 pl-5">
+          <li>Modelagem de Dados e otimização de schemas.</li>
+          <li>
+            Desenvolvimento de processos de ETL (Extração, Transformação e Carga), com ampla experiência no uso do
+            Power Query para limpeza e transformação de dados.
+          </li>
+          <li>Criação de dashboards interativos e construção de relatórios utilizando Power BI e soluções do MS Fabric.</li>
+        </ul>
+
+        <p>
+          Com uma base em Análise de Sistemas, tenho a capacidade de alinhar a estratégia de dados aos requisitos de
+          negócio. Minha formação acadêmica inclui Bacharelado em Administração de Empresas (2022) e estou cursando
+          Ciência da Computação (previsão 2026), o que me fornece tanto a visão de negócio quanto o rigor técnico para
+          soluções de alto impacto.
+        </p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="reveal mt-8 scroll-mt-20 rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-4 text-xl font-semibold text-deep-walnut-800 sm:text-2xl">Habilidades</h2>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">SQL</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Python</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">ETL / Power Query</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Power BI</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Microsoft Fabric</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Modelagem de Dados</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Dashboards</span>
+        <span class="rounded-full bg-camel-100 px-3 py-1 text-sm font-medium text-camel-800">Business Intelligence</span>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao" class="reveal mt-8 scroll-mt-20 rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-4 text-xl font-semibold text-deep-walnut-800 sm:text-2xl">Formação</h2>
+
+      <div class="space-y-4">
+        <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Bacharelado em Ciência da Computação</h3>
+          <p class="text-sm text-silver-600">Previsão de conclusão em 2026</p>
         </div>
-    
-    </div>
+        <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Bacharelado em Administração de Empresas</h3>
+          <p class="text-sm text-silver-600">Concluído em 2022</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="mt-6">
-      <h2 class="font-semibold text-indigo-300 text-2xl mb-2">Bio</h2>
-      <p class="indent-4 font-light mt-1 max-w-lg text-justify">
-        Sou um profissional de dados com experiência consolidada em Business Intelligence (BI) e em aprofundamento contínuo em Engenharia de Dados. Minha principal expertise é transformar dados brutos em ativos estratégicos, focando na construção de pipelines e soluções que otimizam a tomada de decisão estratégica.
+    <!-- Carreira -->
+    <section id="carreira" class="reveal mt-8 scroll-mt-20 rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-2 text-xl font-semibold text-deep-walnut-800 sm:text-2xl">Carreira</h2>
 
-Sou proficiente nas linguagens SQL (para análise, otimização de consultas e desenvolvimento de relatórios) e Python. Minha atuação abrange a gestão completa do ciclo de dados:
+      <div class="divide-y divide-onyx-100">
 
-- Modelagem de Dados e otimização de schemas.
-- Desenvolvimento de processos de ETL (Extração, Transformação e Carga), com ampla experiência no uso do Power Query para limpeza e transformação de dados.
-- Criação de dashboards interativos e construção de relatórios utilizando Power BI e soluções do MS Fabric.
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">InBetta</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de BI</li>
+          </ul>
+        </div>
 
-Com uma base em Análise de Sistemas, tenho a capacidade de alinhar a estratégia de dados aos requisitos de negócio. Minha formação acadêmica inclui Bacharelado em Administração de Empresas (2022) e estou cursando Ciência da Computação (previsão 2026), o que me fornece tanto a visão de negócio quanto o rigor técnico para soluções de alto impacto.
-      </p>
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Sanremo</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de BI</li>
+          </ul>
+        </div>
 
-    </div>
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Gauchafarma</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de Sistemas</li>
+            <li>Analista de Compras</li>
+          </ul>
+        </div>
 
-    <div class="mt-6">
-      
-      <h2 class="text-indigo-300 font-semibold text-2xl mb-2">Carreira</h2>
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Procfit</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de Sistemas</li>
+          </ul>
+        </div>
 
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">InBetta</h3>
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Mais Econômica</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de Supply Chain</li>
+            <li>Analista de Logística</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">RMA</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de Logística</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Stemac</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Analista de Logística</li>
+            <li>Assistente de Logística</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="font-semibold text-deep-walnut-800">Panpharma</h3>
+          <ul class="space-y-0.5 text-sm text-silver-600 sm:text-right">
+            <li>Assistente de Logística</li>
+          </ul>
+        </div>
 
       </div>
+    </section>
 
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de BI</li>
-      </ul>
+    <!-- Contato -->
+    <section id="contato" class="reveal mt-8 scroll-mt-20 rounded-2xl border border-onyx-100 bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-4 text-xl font-semibold text-deep-walnut-800 sm:text-2xl">Contato</h2>
 
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Sanremo</h3>
-
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a
+          class="flex flex-1 items-center justify-center gap-2 rounded-lg bg-deep-walnut-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-deep-walnut-700"
+          href="mailto:gabriel@lumertz.dev"
+        >
+          <img class="h-5 w-5" src="./assets/logo-gmail.png" alt="">
+          E-mail
+        </a>
+        <a
+          class="flex flex-1 items-center justify-center gap-2 rounded-lg bg-deep-walnut-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-deep-walnut-700"
+          href="https://wa.me/5199868614"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="h-5 w-5" src="./assets/logo-whatsapp.png" alt="">
+          WhatsApp
+        </a>
+        <a
+          class="flex flex-1 items-center justify-center gap-2 rounded-lg bg-deep-walnut-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-deep-walnut-700"
+          href="https://www.linkedin.com/in/gabriel-lumertz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="h-5 w-5" src="./assets/logo-linkedin.png" alt="">
+          LinkedIn
+        </a>
       </div>
+    </section>
 
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de BI</li>
-      </ul>
+    <footer class="mt-8 flex flex-col items-center gap-2 text-center text-sm text-silver-500">
+      <a href="#bio" class="transition-colors hover:text-deep-walnut-600">Voltar ao topo</a>
+      <span>© 2026 Gabriel Lumertz</span>
+    </footer>
 
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Gauchafarma</h3>
+  </main>
 
-      </div>
+  <script>
+    document.documentElement.classList.add('js');
 
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de Sistemas</li>
-        <li class="list-item">Analista de Compras</li>
-      </ul>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Procfit</h3>
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
 
-      </div>
-
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de Sistemas</li>
-      </ul>
-
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Mais Econômica</h3>
-
-      </div>
-
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de Supply Chain</li>
-        <li class="list-item">Analista de Logística</li>
-      </ul>
-
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">RMA</h3>
-
-      </div>
-
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de Logística</li>
-      </ul>
-
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Stemac</h3>
-
-      </div>
-
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Analista de Logística</li>
-        <li class="list-item">Assistente de Logística</li>
-      </ul>
-
-      <div class="mt-4">
-        
-        <h3 class="text-yellow-400 font-medium text-xl mt-1">Panpharma</h3>
-
-      </div>
-
-      <ul class="list-disc list-inside pl-4">
-        <li class="list-item">Assistente de Logística</li>
-      </ul>
-    
-    </div>
-
-  </div>
-     
-</bod>
+</body>
 
 </html>
